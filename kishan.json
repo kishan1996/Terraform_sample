@@ -1,0 +1,114 @@
+[0m# aws_db_instance.default:
+resource "aws_db_instance" "default" {
+    [1m[0maddress[0m[0m                               = "terraform-20220320025816734800000001.ctn6vycs4wym.ap-south-1.rds.amazonaws.com"
+    [1m[0mallocated_storage[0m[0m                     = 10
+    [1m[0marn[0m[0m                                   = "arn:aws:rds:ap-south-1:966180254834:db:terraform-20220320025816734800000001"
+    [1m[0mauto_minor_version_upgrade[0m[0m            = true
+    [1m[0mavailability_zone[0m[0m                     = "ap-south-1a"
+    [1m[0mbackup_retention_period[0m[0m               = 0
+    [1m[0mbackup_window[0m[0m                         = "23:12-23:42"
+    [1m[0mca_cert_identifier[0m[0m                    = "rds-ca-2019"
+    [1m[0mcopy_tags_to_snapshot[0m[0m                 = false
+    [1m[0mcustomer_owned_ip_enabled[0m[0m             = false
+    [1m[0mdb_name[0m[0m                               = "mydb"
+    [1m[0mdb_subnet_group_name[0m[0m                  = "default"
+    [1m[0mdelete_automated_backups[0m[0m              = true
+    [1m[0mdeletion_protection[0m[0m                   = false
+    [1m[0menabled_cloudwatch_logs_exports[0m[0m       = []
+    [1m[0mendpoint[0m[0m                              = "terraform-20220320025816734800000001.ctn6vycs4wym.ap-south-1.rds.amazonaws.com:3306"
+    [1m[0mengine[0m[0m                                = "mysql"
+    [1m[0mengine_version[0m[0m                        = "5.7"
+    [1m[0mengine_version_actual[0m[0m                 = "5.7.36"
+    [1m[0mhosted_zone_id[0m[0m                        = "Z2VFMSZA74J7XZ"
+    [1m[0miam_database_authentication_enabled[0m[0m   = false
+    [1m[0mid[0m[0m                                    = "terraform-20220320025816734800000001"
+    [1m[0midentifier[0m[0m                            = "terraform-20220320025816734800000001"
+    [1m[0midentifier_prefix[0m[0m                     = "terraform-"
+    [1m[0minstance_class[0m[0m                        = "db.t3.micro"
+    [1m[0miops[0m[0m                                  = 0
+    [1m[0mlatest_restorable_time[0m[0m                = "0001-01-01T00:00:00Z"
+    [1m[0mlicense_model[0m[0m                         = "general-public-license"
+    [1m[0mmaintenance_window[0m[0m                    = "fri:09:45-fri:10:15"
+    [1m[0mmax_allocated_storage[0m[0m                 = 0
+    [1m[0mmonitoring_interval[0m[0m                   = 0
+    [1m[0mmulti_az[0m[0m                              = false
+    [1m[0mname[0m[0m                                  = "mydb"
+    [1m[0moption_group_name[0m[0m                     = "default:mysql-5-7"
+    [1m[0mparameter_group_name[0m[0m                  = "default.mysql5.7"
+    [1m[0mpassword[0m[0m                              = (sensitive value)
+    [1m[0mperformance_insights_enabled[0m[0m          = false
+    [1m[0mperformance_insights_retention_period[0m[0m = 0
+    [1m[0mport[0m[0m                                  = 3306
+    [1m[0mpublicly_accessible[0m[0m                   = false
+    [1m[0mreplicas[0m[0m                              = []
+    [1m[0mresource_id[0m[0m                           = "db-23LVKLEFD44JHLBFY4EKHLUGT4"
+    [1m[0msecurity_group_names[0m[0m                  = []
+    [1m[0mskip_final_snapshot[0m[0m                   = false
+    [1m[0mstatus[0m[0m                                = "available"
+    [1m[0mstorage_encrypted[0m[0m                     = false
+    [1m[0mstorage_type[0m[0m                          = "gp2"
+    [1m[0mtags[0m[0m                                  = {}
+    [1m[0mtags_all[0m[0m                              = {}
+    [1m[0musername[0m[0m                              = "foo"
+    [1m[0mvpc_security_group_ids[0m[0m                = [
+        "sg-06e2ae6281d7e4ed8",
+    ]
+}
+
+# aws_s3_bucket.bucket1:
+resource "aws_s3_bucket" "bucket1" {
+    [1m[0macl[0m[0m                                  = "private"
+    [1m[0marn[0m[0m                                  = "arn:aws:s3:::my-tf-buckettt"
+    [1m[0mbucket[0m[0m                               = "my-tf-buckettt"
+    [1m[0mbucket_domain_name[0m[0m                   = "my-tf-buckettt.s3.amazonaws.com"
+    [1m[0mbucket_regional_domain_name[0m[0m          = "my-tf-buckettt.s3.ap-south-1.amazonaws.com"
+    [1m[0mcors_rule[0m[0m                            = []
+    [1m[0mforce_destroy[0m[0m                        = false
+    [1m[0mgrant[0m[0m                                = []
+    [1m[0mhosted_zone_id[0m[0m                       = "Z11RGJOFQNVJUP"
+    [1m[0mid[0m[0m                                   = "my-tf-buckettt"
+    [1m[0mlifecycle_rule[0m[0m                       = []
+    [1m[0mlogging[0m[0m                              = []
+    [1m[0mobject_lock_enabled[0m[0m                  = false
+    [1m[0mregion[0m[0m                               = "ap-south-1"
+    [1m[0mreplication_configuration[0m[0m            = []
+    [1m[0mrequest_payer[0m[0m                        = "BucketOwner"
+    [1m[0mserver_side_encryption_configuration[0m[0m = []
+    [1m[0mtags[0m[0m                                 = {
+        "Environment" = "Dev"
+        "Name"        = "my bucket"
+    }
+    [1m[0mtags_all[0m[0m                             = {
+        "Environment" = "Dev"
+        "Name"        = "my bucket"
+    }
+    [1m[0mversioning[0m[0m                           = [
+        {
+            enabled    = false
+            mfa_delete = false
+        },
+    ]
+    [1m[0mwebsite[0m[0m                              = []
+}
+
+# aws_s3_bucket_acl.example:
+resource "aws_s3_bucket_acl" "example" {
+    [1m[0macl[0m[0m    = "private"
+    [1m[0mbucket[0m[0m = "my-tf-buckettt"
+    [1m[0mid[0m[0m     = "my-tf-buckettt,private"
+
+    access_control_policy {
+        grant {
+            [1m[0mpermission[0m[0m = "FULL_CONTROL"
+
+            grantee {
+                [1m[0mid[0m[0m   = "71ec68dc624b77f3e481c81c7f47a9cd793d6c3b2551213be18b86ff27b7a078"
+                [1m[0mtype[0m[0m = "CanonicalUser"
+            }
+        }
+
+        owner {
+            [1m[0mid[0m[0m = "71ec68dc624b77f3e481c81c7f47a9cd793d6c3b2551213be18b86ff27b7a078"
+        }
+    }
+}[0m[0m
